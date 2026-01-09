@@ -4,8 +4,6 @@ python3 --version
 #Check if Django is installed
 django-admin --version or python3 -m django --version
 
-#Install pip
-sudo apt install python3-pip
 
 #Make sure pip exists
 python3 -m pip --version
@@ -16,32 +14,33 @@ sudo apt install python3-pip
 #Install Django
 pip3 install django
 
-Creating a Django project
+#Creating a Django project
 mkdir django-belajar
 cd django-belajar
 
-Create a Virtual Environment
+#Create a Virtual Environment
 python3 -m venv venv
 
-Aktifkan Virtual Environment
+#Activate Virtual Environment
 source venv/bin/activate
 
-Install Django (inside venv)
+#Install Django (inside venv)
 pip install django
 
-Create a Django project
+#Create a Django project
 django-admin startproject mysite
 cd mysite
 
-Run the server
+#Run the server
 python manage.py runserver
-Run Migration
+#Run Migration
 CTRL + C
 python manage.py migrate
 
-(OPTIONAL) Create Django Admin
+#(OPTIONAL) Create Django Admin
 python manage.py createsuperuser
-Restart the server
+
+#Restart the server
 python manage.py runserver
 http://127.0.0.1:8000/ → Home Page
 http://127.0.0.1:8000/admin → admin Page
